@@ -1,0 +1,12 @@
+name: my workflow 
+on:
+  push:
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name:print hello 
+        run:echo "hello world"
+#echo "hello world" means that because you use ubuntu it is a bash command and if you using windows it will be a powershell command. so if you want to use windows you need to change the run command to powershell command.
+        
