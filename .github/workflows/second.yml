@@ -2,10 +2,11 @@ name: second workflow
 on:
   push:
   
-  jobs:
-    demo:
-      runs-on: ubuntu-latest
-      steps:
-        - name: checkout_lab
-          uses: actions/checkout@v4
-          echo: "checkout is done"
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout_lab
+        uses: actions/checkout@v4
+      - name: check it runs right
+        run: echo "you do it brother"
