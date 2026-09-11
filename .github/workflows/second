@@ -1,0 +1,11 @@
+name: second workflow
+on:
+  push:
+  
+  jobs:
+    demo:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout_lab
+          uses: actions/checkout@v4
+          
