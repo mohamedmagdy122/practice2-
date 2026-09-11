@@ -8,4 +8,4 @@ on:
       steps:
         - name: checkout_lab
           uses: actions/checkout@v4
-          
+          echo: "checkout is done"
