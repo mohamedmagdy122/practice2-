@@ -21,9 +21,9 @@ jobs:
       # check node installed 
       #------------------------------------------------------------------
       - name: check node installed background
-        run: |
-          echo"node version"
+        run:  |
+          echo "node version "
           node -v 
-          echo"nmp version"
+          echo "npm version "
           npm -v 
           
