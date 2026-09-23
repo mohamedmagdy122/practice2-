@@ -31,4 +31,19 @@ jobs:
       #------------------------------------------------------------------
       - name: creat a script directory background
         run: mkdir -p scripts 
-      
+      #------------------------------------------------------------------
+      # example in shell based  
+      #------------------------------------------------------------------
+      - name: example with shell based 
+        shell : bash 
+        working-directory: scripts
+        continue-on-error: true
+        env:
+          name : mohamed 
+          city : cairo 
+          run : | 
+            echo "$pwd"
+            echo "Bash shell executing..."
+            echo "Hello $NAME from $CITY"
+            exit 1   # will not break workflow
+        
