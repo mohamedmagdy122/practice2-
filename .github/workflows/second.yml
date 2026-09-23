@@ -35,13 +35,13 @@ jobs:
       # example in shell based  
       #------------------------------------------------------------------
       - name: example with shell based 
-        shell : bash 
+        shell: bash 
         working-directory: scripts
         continue-on-error: true
         env:
-          name : mohamed 
-          city : cairo 
-          run : | 
+          NAME: mohamed 
+          CITY: cairo 
+        run: | 
             echo "$pwd"
             echo "Bash shell executing..."
             echo "Hello $NAME from $CITY"
