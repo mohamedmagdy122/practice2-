@@ -42,7 +42,7 @@ jobs:
           NAME: mohamed 
           CITY: cairo 
         run: | 
-            echo "$pwd"
+            echo "$PWD"
             echo "Bash shell executing..."
             echo "Hello $NAME from $CITY"
             exit 1   # will not break workflow
