@@ -4,7 +4,7 @@ on:
   push:
 # first variable which is app_name 
 env:
-APP_NAME: workflow-app
+  APP_NAME: workflow-app
 
 jobs:
   demo:
