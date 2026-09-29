@@ -2,9 +2,13 @@ name: variables demo
 
 on:
   push:
+# first variable which is app_name 
+env:
+APP_NAME: workflow-app
+
 jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name : hello 
-        run: echo "hello github actions"
+      - name : show app name 
+        run: echo "APP_NAME=$APP_NAME
