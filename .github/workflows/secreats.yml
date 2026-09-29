@@ -1,14 +1,26 @@
-name: variables demo 
+name: Variables Demo
 
 on:
   push:
-# first variable which is app_name 
+
 env:
   APP_NAME: workflow-app
+  ENVIRONMENT: production
+  OWNER: workflow-owner
 
 jobs:
   demo:
     runs-on: ubuntu-latest
+
+    env:
+      ENVIRONMENT: job-env
+      DB_HOST: job-database
+      OWNER: job-owner
+
     steps:
-      - name : show app name 
-        run: echo "APP_NAME=$APP_NAME"
+      - NAME: SHOW JOBS AND WORKFLOW VARIABLES 
+        run: |
+          echo "APP_NAME=$APP_NAME"
+          echo "ENVIRONMENT=$ENVIRONMENT"
+          echo "DB_HOST=$DB_HOST"
+          echo "OWNER=$OWNER"
