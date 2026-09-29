@@ -18,7 +18,7 @@ jobs:
       OWNER: job-owner
 
     steps:
-      - NAME: SHOW JOBS AND WORKFLOW VARIABLES 
+      - name: SHOW JOBS AND WORKFLOW VARIABLES 
         run: |
           echo "APP_NAME=$APP_NAME"
           echo "ENVIRONMENT=$ENVIRONMENT"
