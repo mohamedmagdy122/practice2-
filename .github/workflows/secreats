@@ -1,0 +1,10 @@
+name: variables demo 
+
+on:
+  push:
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name : hello 
+        run: echo"hello github actions "
