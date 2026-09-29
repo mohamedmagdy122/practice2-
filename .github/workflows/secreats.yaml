@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : show app name 
-        run: echo "APP_NAME=$APP_NAME
+        run: echo "APP_NAME=$APP_NAME"
