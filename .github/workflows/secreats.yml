@@ -24,3 +24,11 @@ jobs:
           echo "ENVIRONMENT=$ENVIRONMENT"
           echo "DB_HOST=$DB_HOST"
           echo "OWNER=$OWNER"
+      - name: step-level-variable
+        env:
+          OWNER: step-owner #highest periority  
+          VERSION: 10.5
+        run: |
+            echo "owner=$OWNER"
+            echo "version=$VERSION"
+            echo "app-name=$APP_NAME"
