@@ -34,5 +34,5 @@ jobs:
             echo "app-name=$APP_NAME"
       - name: repo-variables 
         run: |
-            echo"API_URL=${{ vars.API_URL }}"
+            echo "API_URL=${{ vars.API_URL }}"
         
