@@ -38,3 +38,14 @@ jobs:
       - name: repo-secret
         run: |
           echo "API_KEY=${{SECRETS.API_KEY}}"
+      - name: variables_precedence
+        env:
+          ENVIRONMENT: step-env
+        run: |
+          echo "Step-level ENVIRONMENT=$ENVIRONMENT"
+          echo "Job-level DB_HOST=$DB_HOST"
+          echo "Workflow-level APP_NAME=$APP_NAME"
+          echo "OWNER=$OWNER"
+
+
+      
