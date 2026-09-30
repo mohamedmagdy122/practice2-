@@ -35,4 +35,6 @@ jobs:
       - name: repo-variables 
         run: |
             echo "API_URL=${{ vars.API_URL }}"
-        
+      - name: repo-secret
+        run: |
+          echo "API_KEY=${{SECRETS.API_KEY}}"
