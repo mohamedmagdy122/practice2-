@@ -46,6 +46,11 @@ jobs:
           echo "Job-level DB_HOST=$DB_HOST"
           echo "Workflow-level APP_NAME=$APP_NAME"
           echo "OWNER=$OWNER"
+      - name: show github default variables background
+        run: |
+          echo "GITHUB_REPO=$GITHUB_REPOSITORY"
+          echo "GITHUB_SHA=$GITHUB_SHA"
+
 
 
       
